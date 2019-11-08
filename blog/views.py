@@ -1,7 +1,7 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
-from django.contrib.auth.decorators import login_required
 
 
 from django.views.generic import (
@@ -15,6 +15,7 @@ from .models import Post
 
 @login_required
 def home(request):
+    print('Hello Linus');
     context = {
         'posts': Post.objects.all()
     }
