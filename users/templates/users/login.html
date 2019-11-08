@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% load material_form %}
+
+
+{% block content %}
+    <div class="mdl-grid site-copy">
+    
+        <div class="mdl-cell mdl-cell--12-col">
+        <form method="POST">
+            {% csrf_token %}
+            {% form %}
+                {% part form.username prefix %}<i class="mdl-textfield__input"></i>{% endpart %}
+                {% part form.password prefix %}<i class="mdl-textfield__input"></i>{% endpart %}
+            {% endform %}
+                <button type="submit" class="btn">Submit</button>
+                <p class="text-muted ml-2">
+                    <a href="{% url 'password_reset' %}">Forgot Password?</a>
+                </p>
+                       <div class="border-top pt-3">
+            <h6 class="text-muted">
+                Need An Account? <a class="ml-8" href="{% url 'register' %}">Sign Up Now</a>
+            </h6>
+        </div>
+        </form>
+    </div>
+    </div>
+
+{% endblock content %}
