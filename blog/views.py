@@ -78,10 +78,8 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         return False
 
-@login_required
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
 
-@login_required
 def contact(request):
     return render(request, 'blog/contact.html', {'title': 'Contact'})

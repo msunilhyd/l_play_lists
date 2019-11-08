@@ -171,6 +171,25 @@ img {
   margin: 0 auto;
 }
 
+h1 {
+  width: 100%;
+  background: blue;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.05);
+  border-radius: 3px 3px 0 0;
+}
+
+.w3-content{
+  text-align: center;
+  max-width: inherit;
+}
+
+.ada-card {
+  min-height: 100px;
+  font-family: "Work Sans", sans-serif !important;
+}
+
 .homepage-footer {
   /* background: #eee; */
   margin-bottom: -1em;
