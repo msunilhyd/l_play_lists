@@ -56,13 +56,20 @@ img {
   text-align: center;
   max-width: 900px;
   width: 100%;
+  background-color : white;
+  box-shadow : none;
 }
 
 .site-navigation-row .mdl-navigation__link {
   -ms-flex: 1;
   flex: 1;
   line-height: 42px;
-  color: #fff;
+  color: black;
+  font-family : proxima-nova;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .site-navigation-row .is-active {
