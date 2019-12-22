@@ -4,37 +4,25 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        {% for post in posts %}
-        <div class="site-content">
-          <div class="container">
-            <div class="mdl-grid site-max-width"></div>
-        <section class="section--center mdl-grid site-max-width">
+    {% for post in posts %}
+    <div class="site-content">
+      <div class="container">
+        <div class="mdl-grid site-max-width"></div>
+    <section class="section--center mdl-grid site-max-width">
 
-          <iframe width="420" height="345" src={{ post.vid_url }}>
-          </iframe>
-          </section>
-        <article class="media content-section">
-          <div class="media-body">
-            <div class="article-metadata">
-              <a class="mr-2" href="#">{{ post.author }}</a>
-              <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
-            </div>
-            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
-            <p class="article-content">{{ post.vid_url }}</p>
-             
-          </div>
-
-        </article>
-      </div>
-
-    </div>
-
+      <iframe width="420" height="345" src={{ post.vid_url }}>
+      </iframe>
+      </section>
+          <a class="mr-2 font-fourteen" href="#">{{ post.author }}</a>
+          <p class="text-muted">{{ post.date_posted|date:"F d, Y" }}</p>
   </div>
 
+</div>
 
-    {% endfor %}
+</div>
 
+
+{% endfor %}
 
     {% else %}
         <h1> user is not authenticated</h1>

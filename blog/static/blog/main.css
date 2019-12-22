@@ -6,6 +6,10 @@ img {
   position: relative;
 }
 
+.text-muted{
+  float: right;
+}
+
 .site-header .mdl-layout__header-row {
   padding: 0;
   -ms-flex-pack: center;
@@ -46,6 +50,9 @@ img {
   margin: 7px auto;
 }
 
+.font-fourteen{
+  font-size: 14px;
+}
 .site-navigation-row {
   /* background-color: rgba(0, 0, 0, 0.08); */
   text-transform: uppercase;
