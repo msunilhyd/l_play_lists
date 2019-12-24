@@ -2,8 +2,16 @@ img {
   max-width: 100%;
 }
 
+.pad14{
+  padding: 14px;
+  font-size: initial;
+}
 .site-header {
   position: relative;
+}
+
+.proxima{
+  font-family: 'proxima-nova';
 }
 
 /* .text-muted{
