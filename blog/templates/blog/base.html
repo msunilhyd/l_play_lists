@@ -74,12 +74,12 @@
                     
                               <main role="main" class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 msg-font">
           {% if messages %}
             {% for message in messages %}
-              <div class="alert alert-{{ message.tags }}">
+              <p>
                 {{ message }}
-              </div>
+              </p>
             {% endfor %}
           {% endif %}
           {% block content %}{% endblock %}

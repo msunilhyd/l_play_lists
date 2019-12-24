@@ -39,8 +39,7 @@ def profile(request):
 
     context = {
         'u_form': u_form,
-        'p_form': p_form,
-        'posts': Post.objects.filter(author=request.user).order_by('-date_posted')
-    }
+        'p_form': p_form
+        }
 
     return render(request, 'users/profile.html', context)

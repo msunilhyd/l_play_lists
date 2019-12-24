@@ -6,9 +6,9 @@ img {
   position: relative;
 }
 
-.text-muted{
+/* .text-muted{
   float: right;
-}
+} */
 
 .site-header .mdl-layout__header-row {
   padding: 0;
@@ -48,6 +48,10 @@ img {
   height: 50px;
   width: 50px;
   margin: 7px auto;
+}
+
+.msg-font{
+  font-family: proxima-nova;
 }
 
 .font-fourteen{
