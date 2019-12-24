@@ -5,6 +5,7 @@ img {
 .pad14{
   padding: 14px;
   font-size: initial;
+  font-family: 'proxima-nova';
 }
 .site-header {
   position: relative;
