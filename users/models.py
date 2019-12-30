@@ -2,6 +2,10 @@ from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
 
+def get_email(self):
+    return self.email
+
+User.add_to_class("__str__", get_email)
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)

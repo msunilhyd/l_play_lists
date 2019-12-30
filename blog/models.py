@@ -12,7 +12,7 @@ class Post(models.Model):
     vid_url = models.TextField(null=True)
 
     def __str__(self):
-        return self.title
+        return self.content
 
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'pk': self.pk})
