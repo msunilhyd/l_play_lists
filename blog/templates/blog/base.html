@@ -45,7 +45,7 @@
                           <nav class="mdl-navigation">
                           <a class="mdl-navigation__link" href="{% url 'blog-home' %}">Home</a>
                           <a class="mdl-navigation__link" href="{% url 'blog-about' %}">About</a>
-                          <a class="mdl-navigation__link" href="{% url 'blog-contact' %}">Contact</a>
+                          <!-- <a class="mdl-navigation__link" href="{% url 'blog-contact' %}">Contact</a> -->
                           {% if user.is_authenticated %}
                           <a class="mdl-navigation__link" href="{% url 'profile' %}">Profile</a>
                           <a class="mdl-navigation__link" href="{% url 'logout' %}">Logout</a>
@@ -61,7 +61,7 @@
                         <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                         <a class="mdl-navigation__link" href="{% url 'blog-home' %}">Home</a>
                         <a class="mdl-navigation__link" href="{% url 'blog-about' %}">About</a>
-                        <a class="mdl-navigation__link" href="{% url 'blog-contact' %}">Contact</a>
+                        <!-- <a class="mdl-navigation__link" href="{% url 'blog-contact' %}">Contact</a> -->
                         {% if user.is_authenticated %}
                         <a class="mdl-navigation__link" href="{% url 'profile' %}">Profile</a>
                         <a class="mdl-navigation__link" href="{% url 'logout' %}">Logout</a>
