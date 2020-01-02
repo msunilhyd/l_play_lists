@@ -9,7 +9,7 @@ class Post(models.Model):
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    vid_url = models.TextField(null=True)
+    vid_url = models.TextField(default='https://www.youtube.com/embed/')
 
     def __str__(self):
         return self.content
