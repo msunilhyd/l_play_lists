@@ -9,10 +9,10 @@
             <form method="POST">
             {% csrf_token %}
             {% form %}
-                {% part form.username prefix %}<i class="mdl-textfield__input"></i>{% endpart %}
-                {% part form.email prefix %}<i class="mdl-textfield__input"></i>{% endpart %}
-                {% part form.password1 prefix %}<i class="mdl-textfield__input"></i>{% endpart %}
-                {% part form.password2 prefix %}<i class="mdl-textfield__input"></i>{% endpart %}
+                {% part form.username prefix %}{% endpart %}
+                {% part form.email prefix %}{% endpart %}
+                {% part form.password1 prefix %}{% endpart %}
+                {% part form.password2 prefix %}{% endpart %}
             
             {% endform %}
             <div class="form-group">
