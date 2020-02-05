@@ -16,7 +16,7 @@ from .models import Post
 @login_required
 def home(request):
     context = {
-        'posts': Post.objects.filter(author=request.user).order_by('-date_posted')
+        'posts': Post.objects.order_by('-date_posted')
     }
     return render(request, 'blog/home.html', context)
 
